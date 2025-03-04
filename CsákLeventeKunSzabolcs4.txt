@@ -1,0 +1,87 @@
+A: Szabolcs
+B: Cs. Levente
+
+A:
+A1
+git init
+git remote add origin https://github.com/CsakLeventeCkik/branchDologozat4.git
+git add .
+git commit -m "A1"
+git push origin master
+
+B:
+git init
+git remote add origin https://github.com/CsakLeventeCkik/branchDologozat4.git
+git fetch
+git pull origin master
+B2
+git add .
+git commit -m "B2"
+git push origin master
+
+A:
+git fetch
+git pull origin master
+git branch fejlesztes
+git checkout fejlesztes
+A3
+git add .
+git commit -m "A3"
+git push origin fejlesztes
+
+B:
+git fetch
+git pull origin master
+git checkout fejlesztes
+git pull origin fejlesztes
+git checkout master
+B4
+git add .
+git commit -m "B4"
+git push origin master
+git checkout fejlesztes
+B5
+git add .
+git commit -m "B5"
+git push origin fejlesztes
+
+A:
+git fetch
+git status
+git pull origin fejlesztes
+git status
+git checkout master
+git pull origin master
+git status
+A6
+git add .
+git commit -m "A6"
+git push origin master
+git checkout fejlesztes
+git push origin fejlesztes
+
+B:
+git status
+git pull origin fejlesztes
+git checkout master
+git pull origin master
+git checkout origin/fejlesztes
+git branch fejlesztes
+git checkout master
+git merge fejlesztes
+Konfliktus kezelés
+B7
+git add .
+git commit -m "B7"
+git push origin master
+
+A:
+git fetch
+git status
+git checkout origin/master
+git pull origin master
+A8
+Dokumentum berakása
+git add .
+git commit -m "A8"
+git push origin master
